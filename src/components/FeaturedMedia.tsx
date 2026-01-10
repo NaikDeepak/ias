@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { MapPin, Calendar, ArrowRight, Trophy } from 'lucide-react';
+import { MapPin, CalendarBlank, ArrowRight, Trophy } from '@phosphor-icons/react';
 import punePandharpur from '../assets/pune_pandharpur_wari_retry_1768025130005.png';
 import bhaktiShakti from '../assets/bhakti_shakti_cyclothon_v2.png';
 import shivneri from '../assets/shivneri_ride_1768025100903.png';
@@ -122,7 +122,7 @@ export default function FeaturedMedia() {
 
                             <div className="absolute top-4 left-4">
                                 <span className="px-3 py-1 bg-orange-500/90 backdrop-blur-md text-xs rounded-full font-bold uppercase tracking-wider text-black flex items-center gap-1">
-                                    <Trophy className="w-3 h-3" />
+                                    <Trophy size={14} weight="fill" />
                                     {item.type}
                                 </span>
                             </div>
@@ -130,11 +130,11 @@ export default function FeaturedMedia() {
                             <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                                 <div className="flex items-center gap-4 mb-3 text-orange-200 text-xs font-semibold uppercase tracking-wide">
                                     <div className="flex items-center gap-1">
-                                        <Calendar className="w-3 h-3" />
+                                        <CalendarBlank size={14} weight="bold" />
                                         {item.date}
                                     </div>
                                     <div className="flex items-center gap-1">
-                                        <MapPin className="w-3 h-3" />
+                                        <MapPin size={14} weight="bold" />
                                         {item.location}
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@ export default function FeaturedMedia() {
                                 </p>
                                 <div className="flex items-center gap-2 text-sm font-bold text-orange-400 group-hover:text-white transition-colors opacity-0 group-hover:opacity-100 delay-100">
                                     <span>Register Now</span>
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    <ArrowRight size={16} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                                 </div>
                             </div>
                         </motion.a>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, ArrowRight, Users } from 'lucide-react';
+import { FacebookLogo, InstagramLogo, ArrowRight, UsersThree } from '@phosphor-icons/react';
 
 export default function SocialConnect() {
     return (
@@ -15,7 +15,7 @@ export default function SocialConnect() {
                     className="text-center mb-16"
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
-                        <Users className="w-4 h-4 text-teal-400" />
+                        <UsersThree size={16} weight="fill" className="text-teal-400" />
                         <span className="text-sm font-medium text-neutral-300">Join 15,000+ Active Members</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Part of the <span className="text-teal-400">Pack.</span></h2>
@@ -38,7 +38,7 @@ export default function SocialConnect() {
                         <div className="relative z-10 flex flex-col h-full justify-between">
                             <div className="flex items-start justify-between mb-8">
                                 <div className="p-4 rounded-2xl bg-white/5 border border-white/5 group-hover:scale-110 transition-transform duration-300">
-                                    <Instagram className="w-8 h-8 text-pink-500" />
+                                    <InstagramLogo size={32} weight="fill" className="text-pink-500" />
                                 </div>
                                 <div className="px-3 py-1 rounded-full bg-white/5 text-xs font-medium text-neutral-400 group-hover:bg-white/10 transition-colors">
                                     @indoathleticsociety
@@ -52,7 +52,7 @@ export default function SocialConnect() {
                                 </p>
                                 <div className="flex items-center gap-2 text-sm font-bold text-white group-hover:text-pink-400 transition-colors">
                                     <span>See Stories</span>
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    <ArrowRight size={16} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                                 </div>
                             </div>
                         </div>
@@ -71,7 +71,7 @@ export default function SocialConnect() {
                         <div className="relative z-10 flex flex-col h-full justify-between">
                             <div className="flex items-start justify-between mb-8">
                                 <div className="p-4 rounded-2xl bg-white/5 border border-white/5 group-hover:scale-110 transition-transform duration-300">
-                                    <Facebook className="w-8 h-8 text-blue-500" />
+                                    <FacebookLogo size={32} weight="fill" className="text-blue-500" />
                                 </div>
                                 <div className="px-3 py-1 rounded-full bg-white/5 text-xs font-medium text-neutral-400 group-hover:bg-white/10 transition-colors">
                                     Indo Athletic Society
@@ -85,7 +85,7 @@ export default function SocialConnect() {
                                 </p>
                                 <div className="flex items-center gap-2 text-sm font-bold text-white group-hover:text-blue-400 transition-colors">
                                     <span>Join Group</span>
-                                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                                    <ArrowRight size={16} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                                 </div>
                             </div>
                         </div>

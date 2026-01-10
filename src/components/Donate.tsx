@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, CreditCard, Gift, ArrowRight } from 'lucide-react';
+import { Heart, CreditCard, Gift, ArrowRight } from '@phosphor-icons/react';
 
 export default function Donate() {
     return (
@@ -12,7 +12,7 @@ export default function Donate() {
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
                         <div className="max-w-2xl">
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/20 text-teal-300 border border-teal-500/30 mb-6 text-xs font-bold uppercase tracking-wider">
-                                <Heart className="w-3 h-3 fill-current" />
+                                <Heart size={12} weight="fill" className="fill-current" />
                                 <span>Support Our Mission</span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
@@ -28,13 +28,13 @@ export default function Donate() {
                             <div className="flex flex-wrap gap-4">
                                 <div className="flex items-center gap-2 text-sm text-neutral-400">
                                     <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                                        <Gift className="w-4 h-4 text-orange-400" />
+                                        <Gift size={16} weight="fill" className="text-orange-400" />
                                     </div>
                                     <span>Tax Benefits (80G)</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-sm text-neutral-400">
                                     <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                                        <CreditCard className="w-4 h-4 text-blue-400" />
+                                        <CreditCard size={16} weight="fill" className="text-blue-400" />
                                     </div>
                                     <span>Secure Payment</span>
                                 </div>
@@ -57,7 +57,7 @@ export default function Donate() {
                                 </button>
                                 <button className="w-full py-4 rounded-xl bg-white/5 border border-white/10 hover:bg-teal-500/20 hover:border-teal-500/50 transition-all font-medium text-left px-6 group flex items-center justify-between">
                                     <span>Custom Amount</span>
-                                    <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                    <ArrowRight size={16} weight="bold" className="opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </button>
                             </div>
                             <button className="w-full py-4 bg-gradient-to-r from-teal-500 to-green-500 hover:from-teal-400 hover:to-green-400 text-black font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(20,184,166,0.3)]">

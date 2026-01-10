@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Users, Leaf, Heart, Globe } from 'lucide-react';
+import { UsersThree, Plant, Heart, Globe } from '@phosphor-icons/react';
 
 export default function About() {
     return (
@@ -13,7 +13,7 @@ export default function About() {
                         transition={{ duration: 0.8 }}
                     >
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 border border-teal-500/20 mb-6 text-xs font-bold uppercase tracking-wider">
-                            <Globe className="w-3 h-3" />
+                            <Globe size={12} weight="fill" />
                             <span>India's Largest Sports NGO</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
@@ -31,12 +31,12 @@ export default function About() {
 
                         <div className="grid grid-cols-2 gap-6">
                             <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
-                                <Leaf className="w-8 h-8 text-green-500 mb-3" />
+                                <Plant size={32} weight="fill" className="text-green-500 mb-3" />
                                 <h4 className="font-bold text-xl mb-1">Green Mission</h4>
                                 <p className="text-sm text-neutral-500">Promoting eco-friendly commuting and preservation.</p>
                             </div>
                             <div className="p-4 rounded-2xl bg-white/5 border border-white/5">
-                                <Heart className="w-8 h-8 text-red-500 mb-3" />
+                                <Heart size={32} weight="fill" className="text-red-500 mb-3" />
                                 <h4 className="font-bold text-xl mb-1">Healthy Nation</h4>
                                 <p className="text-sm text-neutral-500">Fighting lifestyle diseases through active living.</p>
                             </div>
@@ -52,7 +52,7 @@ export default function About() {
                         <div className="absolute inset-0 bg-gradient-to-br from-teal-500/20 to-green-500/20 rounded-3xl blur-3xl" />
                         <div className="relative bg-neutral-800 border border-white/10 rounded-3xl p-10 overflow-hidden group hover:border-teal-500/30 transition-colors">
                             <div className="absolute top-0 right-0 p-8 opacity-10">
-                                <Users className="w-64 h-64" />
+                                <UsersThree size={256} weight="duotone" />
                             </div>
 
                             <div className="relative z-10 text-center">
