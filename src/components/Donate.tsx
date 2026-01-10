@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion';
 import { Buildings, Gift, Stamp } from '@phosphor-icons/react';
-import { QRCodeCanvas } from 'qrcode.react';
-
-// Decoded UPI String from the official IAS QR Code
-const UPI_STRING = "000201010211021646049010380490610415512260003804905061661000200380490720826UTIB000314492001003204452026460010A0000005240128MAB.037322031440157@AXISBANK27490010A000000524013103732203144015761000200380490725204839853033565802IN5921INDO ATHLETIC SOCIETY6004PUNE610641104462120708038049076304FDAF";
+import iasQrCode from '../assets/ias_qr_code.png';
 
 const Donate = () => {
     return (
@@ -66,17 +63,8 @@ const Donate = () => {
                         <h3 className="text-2xl font-bold mb-2">Scan to Donate</h3>
                         <p className="text-neutral-400 text-sm mb-6">Use any UPI app to support our mission.</p>
 
-                        <div className="p-4 bg-white rounded-2xl shadow-xl max-w-[280px] relative overflow-hidden group">
-                            {/* Clean white container for QR */}
-                            <QRCodeCanvas
-                                value={UPI_STRING}
-                                size={220}
-                                bgColor={"#ffffff"}
-                                fgColor={"#000000"}
-                                level={"Q"}
-                                includeMargin={false}
-                                className="rounded"
-                            />
+                        <div className="p-4 bg-white rounded-2xl shadow-xl max-w-[280px]">
+                            <img src={iasQrCode} alt="IAS Donation QR Code" className="w-full h-auto rounded-lg mix-blend-multiply" />
                         </div>
 
                         <div className="mt-8 space-y-1 text-sm text-neutral-500">
