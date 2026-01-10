@@ -3,9 +3,9 @@ import { MapPin, CalendarBlank, ArrowRight, Trophy } from '@phosphor-icons/react
 
 // Using the recently generated and validated images
 import bhaktiImg from '../assets/bhakti_shakti_cyclothon_v2.png';
-import shivneriImg from '../assets/shivneri_ride.png';
-import wariImg from '../assets/pune_pandharpur_wari_retry.png';
-import tulapurImg from '../assets/tulapur_ride.png';
+import shivneriImg from '../assets/shivneri_ride_1768025100903.png';
+import wariImg from '../assets/pune_pandharpur_wari_retry_1768025130005.png';
+import tulapurImg from '../assets/tulapur_ride_1768025146379.png';
 
 const EVENTS = [
     {

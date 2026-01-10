@@ -57,7 +57,7 @@ export default function About() {
 
                             <div className="relative z-10 text-center">
                                 <span className="text-7xl md:text-8xl font-bold text-white block mb-2 tracking-tighter">
-                                    10,000+
+                                    15,000+
                                 </span>
                                 <span className="text-xl md:text-2xl text-teal-400 font-medium block mb-8">
                                     Active Members
