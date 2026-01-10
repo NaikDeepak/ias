@@ -1,5 +1,9 @@
 import { motion } from 'framer-motion';
-import { Heart, Buildings, Gift, ArrowRight, Stamp } from '@phosphor-icons/react';
+import { Buildings, Gift, Stamp } from '@phosphor-icons/react';
+import { QRCodeCanvas } from 'qrcode.react';
+
+// Decoded UPI String from the official IAS QR Code
+const UPI_STRING = "000201010211021646049010380490610415512260003804905061661000200380490720826UTIB000314492001003204452026460010A0000005240128MAB.037322031440157@AXISBANK27490010A000000524013103732203144015761000200380490725204839853033565802IN5921INDO ATHLETIC SOCIETY6004PUNE610641104462120708038049076304FDAF";
 
 const Donate = () => {
     return (
@@ -54,28 +58,32 @@ const Donate = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
-                        className="p-8 md:p-10 rounded-3xl bg-neutral-800/50 border border-white/10 backdrop-blur-xl relative overflow-hidden"
+                        className="p-8 md:p-10 rounded-3xl bg-neutral-800/50 border border-white/10 backdrop-blur-xl relative overflow-hidden flex flex-col items-center text-center"
                     >
                         {/* Decorative Glow */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-[80px] pointer-events-none" />
 
-                        <h3 className="text-2xl font-bold mb-6">Make a Donation</h3>
-                        <div className="grid grid-cols-3 gap-4 mb-6">
-                            {['₹500', '₹1000', '₹2000'].map((amt) => (
-                                <button key={amt} className="py-3 rounded-xl border border-white/10 hover:border-orange-500 hover:bg-orange-500/10 hover:text-orange-400 transition-all font-semibold">
-                                    {amt}
-                                </button>
-                            ))}
+                        <h3 className="text-2xl font-bold mb-2">Scan to Donate</h3>
+                        <p className="text-neutral-400 text-sm mb-6">Use any UPI app to support our mission.</p>
+
+                        <div className="p-4 bg-white rounded-2xl shadow-xl max-w-[280px] relative overflow-hidden group">
+                            {/* Clean white container for QR */}
+                            <QRCodeCanvas
+                                value={UPI_STRING}
+                                size={220}
+                                bgColor={"#ffffff"}
+                                fgColor={"#000000"}
+                                level={"Q"}
+                                includeMargin={false}
+                                className="rounded"
+                            />
                         </div>
-                        <input
-                            type="text"
-                            placeholder="Custom Amount (₹)"
-                            className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 mb-8 focus:outline-none focus:border-orange-500/50 transition-colors text-white placeholder:text-neutral-600"
-                        />
-                        <button className="w-full py-4 bg-white text-black rounded-full font-bold hover:bg-neutral-200 transition-all flex items-center justify-center gap-2 group">
-                            Proceed to Pay <ArrowRight weight="bold" className="group-hover:translate-x-1 transition-transform" />
-                        </button>
-                        <p className="text-xs text-center text-neutral-500 mt-4">
+
+                        <div className="mt-8 space-y-1 text-sm text-neutral-500">
+                            <p className="font-mono">MID: 037322031440157</p>
+                            <p className="font-mono">TID: 32574861</p>
+                        </div>
+                        <p className="text-xs text-neutral-600 mt-4 max-w-xs">
                             80G Certificate Available upon request.
                         </p>
                     </motion.div>
