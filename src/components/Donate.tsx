@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, CreditCard, Gift, ArrowRight } from '@phosphor-icons/react';
+import { Heart, Buildings, Gift, ArrowRight, Stamp } from '@phosphor-icons/react';
 
 const Donate = () => {
     return (
@@ -11,16 +11,22 @@ const Donate = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/20 mb-6 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
-                            <Heart weight="fill" className="text-red-500" />
-                            <span>Support the Mission</span>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 text-green-400 border border-green-500/20 mb-6 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                            <Stamp weight="fill" className="text-green-500" />
+                            <span>80G & 12A Certified NGO</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight leading-tight text-white/90">
-                            Empower the next generation of <span className="text-orange-400">athletes</span>.
+                            Health. Environment. <br />
+                            <span className="text-orange-400">Happiness.</span>
                         </h2>
-                        <p className="text-lg text-neutral-400 leading-relaxed mb-8">
-                            Your contributions help us organize events, maintain cycling tracks, and provide coaching to underprivileged talent. IAS is a registered non-profit.
-                        </p>
+                        <div className="text-lg text-neutral-400 leading-relaxed mb-8 space-y-4">
+                            <p>
+                                Indo Athletic Society (IAS) is a <strong className="text-white">Socio-Environmental non-profit</strong> formed to foster awareness about our Health and Environment through the games we play.
+                            </p>
+                            <p>
+                                We are proud to announce that we are now <strong className="text-white">80G & 12A Certified</strong> by the Income Tax Department of India. Your contributions are now eligible for tax exemption, and we are officially open for <strong className="text-white">Corporate Social Responsibility (CSR)</strong> activities.
+                            </p>
+                        </div>
 
                         <div className="flex flex-col gap-4">
                             <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
@@ -28,17 +34,17 @@ const Donate = () => {
                                     <Gift size={24} weight="duotone" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-white mb-1">Tax Benefits</h4>
-                                    <p className="text-sm text-neutral-400">Donations are eligible for tax deduction under Section 80G.</p>
+                                    <h4 className="font-bold text-white mb-1">80G Tax Exemption</h4>
+                                    <p className="text-sm text-neutral-400">Donations made to IAS are eligible for exemption under section 80G of the Income Tax Act.</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
                                 <div className="p-3 rounded-full bg-teal-500/20 text-teal-400">
-                                    <CreditCard size={24} weight="duotone" />
+                                    <Buildings size={24} weight="duotone" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-white mb-1">Secure Payment</h4>
-                                    <p className="text-sm text-neutral-400">We use industry-standard encryption for 100% secure transactions.</p>
+                                    <h4 className="font-bold text-white mb-1">CSR Ready</h4>
+                                    <p className="text-sm text-neutral-400">We invite corporates to partner with us for impactful Social & Environmental initiatives.</p>
                                 </div>
                             </div>
                         </div>
@@ -70,7 +76,7 @@ const Donate = () => {
                             Proceed to Pay <ArrowRight weight="bold" className="group-hover:translate-x-1 transition-transform" />
                         </button>
                         <p className="text-xs text-center text-neutral-500 mt-4">
-                            By donating, you agree to our Terms & Conditions.
+                            80G Certificate Available upon request.
                         </p>
                     </motion.div>
                 </div>
