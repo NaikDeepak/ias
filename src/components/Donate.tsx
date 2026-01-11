@@ -4,7 +4,7 @@ import iasQrCode from '../assets/ias_qr_code.png';
 
 const Donate = () => {
     return (
-        <section className="py-24 relative z-10 bg-neutral-900/30">
+        <section id="donate" className="py-24 relative z-10 bg-neutral-900/30">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <motion.div

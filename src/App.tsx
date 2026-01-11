@@ -27,10 +27,11 @@ function App() {
 
           <div className="flex items-center gap-6">
             <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
-              <a href="#" className="hover:text-amber-500 transition-colors">Rides</a>
-              <a href="#" className="hover:text-amber-500 transition-colors">Runs</a>
-              <a href="#" className="hover:text-amber-500 transition-colors">Events</a>
-              <a href="#" className="hover:text-amber-500 transition-colors">About Us</a>
+
+              <a href="#about" className="hover:text-amber-500 transition-colors">About Us</a>
+              <a href="#events" className="hover:text-amber-500 transition-colors">Events</a>
+              <a href="#donate" className="hover:text-amber-500 transition-colors">Donate</a>
+              <a href="#social" className="hover:text-amber-500 transition-colors">Social</a>
               <div className="h-4 w-px bg-white/10"></div>
             </nav>
 

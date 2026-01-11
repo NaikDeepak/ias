@@ -3,7 +3,7 @@ import { FacebookLogo, InstagramLogo, ArrowRight, UsersThree } from '@phosphor-i
 
 export default function SocialConnect() {
     return (
-        <section className="py-24 bg-neutral-900 text-white overflow-hidden relative">
+        <section id="social" className="py-24 bg-neutral-900 text-white overflow-hidden relative">
             {/* Background noise texture simulation */}
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] bg-repeat" />
 
